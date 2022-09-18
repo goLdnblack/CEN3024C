@@ -124,8 +124,16 @@ public class TextAnalyzer
 	
 	public static void main(String[] args) throws IOException
 	{
-		// Webpage URL pass as argument on command line
-		URL webtext = new URL(args[0]);
+		// Website URL pass as argument on command line
+		// and check if there is no website provided
+		String webpage = (args.length > 0) ? args[0] : "";
+		if (webpage.equals(""))
+		{
+			System.out.println("No website provided. Enter website URL in command line.");
+			System.out.println("Example: java TextAnalyzer www.example.com\n");
+		}
+		
+		URL webtext = new URL(webpage);
 		
 		HashMap<String, Integer> wordFreq = new HashMap<>();
 		
