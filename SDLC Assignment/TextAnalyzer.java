@@ -16,17 +16,26 @@ import java.util.*;
 
 public class TextAnalyzer
 {
-	// Function to sort a hashmap by value and
-	// in descending order.
-	public static Map<String, Integer> sortByVal(HashMap<String, Integer> w)
+	// Function to sort a hashmap by value,
+	// then by key and in descending order.
+	public static void sortByVal(HashMap<String, Integer> w)
 	{
+		int counter = 0;
 		Map<String, Integer> unsorted = w;
 		LinkedHashMap<String, Integer> descendingOrder = new LinkedHashMap<>();
 		
-		unsorted.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
-		.forEachOrdered(x -> descendingOrder.put(x.getKey(), x.getValue()));
+		// Sort by descending value then alphabetical keys
+		unsorted.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()
+		.thenComparing(Map.Entry.comparingByKey())).forEach(x -> descendingOrder.put(x.getKey(), x.getValue()));
 		
-		return descendingOrder;
+		// Print words
+		for (Map.Entry<String, Integer> set : unsorted.entrySet())
+		{
+			System.out.print((++counter) + ". " + set.getKey()
+				+ " " + set.getValue());
+			
+			System.out.println();
+		}
 	}
 	
 	public static void replaceSpecialChar(StringBuilder sb, String text)
@@ -141,7 +150,6 @@ public class TextAnalyzer
 		{
 			// How many words to print
 			int counter = 0;
-			int wordCount = 20;
 			
 			// Set to find text to read on website
 			String readInit = "START OF THE PROJECT GUTENBERG EBOOK THE RAVEN";
@@ -178,20 +186,10 @@ public class TextAnalyzer
 				}
 			}
 			
-			System.out.println("Top 20 Most Frequent Words:");
+			System.out.println("Word Frequency:");
 			
-			Map<String, Integer> sortedWordFreq = sortByVal(wordFreq);
+			sortByVal(wordFreq);
 			
-			for (Map.Entry<String, Integer> set : sortedWordFreq.entrySet())
-			{
-				System.out.print((counter + 1) + ". " + set.getKey() + " " + set.getValue());
-				System.out.println();
-				
-				counter++;
-				
-				if (counter == wordCount)
-					break;
-			}
 		}
 	}
 }
