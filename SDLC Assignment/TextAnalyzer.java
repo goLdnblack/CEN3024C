@@ -18,9 +18,8 @@ public class TextAnalyzer
 {
 	// Function to sort a hashmap by value,
 	// then by key and in descending order.
-	public static void sortByVal(HashMap<String, Integer> w)
+	public static Map<String, Integer> sortByVal(HashMap<String, Integer> w)
 	{
-		int counter = 0;
 		Map<String, Integer> unsorted = w;
 		LinkedHashMap<String, Integer> descendingOrder = new LinkedHashMap<>();
 		
@@ -28,14 +27,7 @@ public class TextAnalyzer
 		unsorted.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()
 		.thenComparing(Map.Entry.comparingByKey())).forEach(x -> descendingOrder.put(x.getKey(), x.getValue()));
 		
-		// Print words
-		for (Map.Entry<String, Integer> set : unsorted.entrySet())
-		{
-			System.out.print((++counter) + ". " + set.getKey()
-				+ " " + set.getValue());
-			
-			System.out.println();
-		}
+		return descendingOrder;
 	}
 	
 	public static void replaceSpecialChar(StringBuilder sb, String text)
@@ -188,8 +180,17 @@ public class TextAnalyzer
 			
 			System.out.println("Word Frequency:");
 			
-			sortByVal(wordFreq);
+			// Return hashmap sorted by value and alphabetical
+			// keys.
+			Map<String, Integer> sortedWordFreq = sortByVal(wordFreq);
 			
+			for (Map.Entry<String, Integer> set : sortedWordFreq.entrySet())
+			{
+				System.out.print((++counter) + ". " + set.getKey()
+					+ " " + set.getValue());
+				
+				System.out.println();
+			}
 		}
 	}
 }
