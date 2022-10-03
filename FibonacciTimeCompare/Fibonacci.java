@@ -10,8 +10,17 @@ public class Fibonacci
 {
 	public static void main(String[] args)
 	{
+		int fibNum = 0;
+
+		System.out.println("Recursive Solution\n");
 		ProgramTimer.start();
-		int fibNum = FibonacciRecursive.fib(Integer.parseInt(args[0]));
+		fibNum = FibonacciRecursive.fib(Integer.parseInt(args[0]));
+		System.out.println(fibNum);
+		ProgramTimer.end();
+
+		System.out.println("Iterative Solution\n");
+		ProgramTimer.start();
+		fibNum = FibonacciIterative.fib(Integer.parseInt(args[0]));
 		System.out.println(fibNum);
 		ProgramTimer.end();
 	}
