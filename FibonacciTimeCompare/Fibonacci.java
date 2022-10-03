@@ -10,17 +10,28 @@ public class Fibonacci
 {
 	public static void main(String[] args)
 	{
+		int fibSequence = Integer.parseInt(args[0]);
 		int fibNum = 0;
+
+		// For DP Recursive
+		int[] memo = new int[fibSequence + 2];
+		Arrays.fill(memo, -1);
 
 		System.out.println("Recursive Solution\n");
 		ProgramTimer.start();
-		fibNum = FibonacciRecursive.fib(Integer.parseInt(args[0]));
+		fibNum = FibonacciRecursive.fib(fibSequence);
 		System.out.println(fibNum);
 		ProgramTimer.end();
 
-		System.out.println("Iterative Solution\n");
+		System.out.println("\nIterative Solution\n");
 		ProgramTimer.start();
-		fibNum = FibonacciIterative.fib(Integer.parseInt(args[0]));
+		fibNum = FibonacciIterative.fib(fibSequence);
+		System.out.println(fibNum);
+		ProgramTimer.end();
+
+		System.out.println("\nRecursive with memoization Solution\n");
+		ProgramTimer.start();
+		fibNum = FibonacciDP.fib(fibSequence, memo);
 		System.out.println(fibNum);
 		ProgramTimer.end();
 	}

@@ -7,13 +7,13 @@ class FibonacciIterative
 
 		int sum = 0, a = 0, b = 1;
 
-		for (int x = 0; x < n; x++)
+		for (int x = 1; x < n; x++)
 		{
-			sum = a + b;
+			sum = a;
 			a = b;
-			b = sum;
+			b = a + sum;
 		}
 
-		return sum;
+		return b;
 	}
 }
