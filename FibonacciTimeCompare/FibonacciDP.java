@@ -2,12 +2,12 @@ import java.util.*;
 
 class FibonacciDP
 {
-	public static int fib(int n, int[] memo)
+	public static long fib(int n, long[] memo)
 	{
 		if (n <= 1)
 			return n;
 
-		int f1, f2;
+		long f1, f2;
 
 		if (memo[n - 1] != -1)
 			f1 = memo[n - 1];

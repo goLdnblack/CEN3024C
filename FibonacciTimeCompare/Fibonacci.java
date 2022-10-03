@@ -11,10 +11,10 @@ public class Fibonacci
 	public static void main(String[] args)
 	{
 		int fibSequence = Integer.parseInt(args[0]);
-		int fibNum = 0;
+		long fibNum = 0;
 
 		// For DP Recursive
-		int[] memo = new int[fibSequence + 2];
+		long[] memo = new long[fibSequence + 2];
 		Arrays.fill(memo, -1);
 
 		System.out.println("Recursive Solution\n");

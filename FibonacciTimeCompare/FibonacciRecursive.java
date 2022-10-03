@@ -1,6 +1,6 @@
 class FibonacciRecursive
 {
-	public static int fib(int n)
+	public static long fib(int n)
 	{
 		// Base case
 		if (n == 0)
