@@ -1,3 +1,9 @@
+/*
+ In current or new class design multiple fib numbers
+ to display the run time for each sequence for both
+ recursive and iterative solutions.
+*/
+
 import java.util.*;
 
 public class Fibonacci
