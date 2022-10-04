@@ -5,15 +5,15 @@ class FibonacciIterative
 		if (n == 0)
 			return 0;
 
-		long sum = 0, a = 0, b = 1;
+		long sum = 1, a = 0, b = 0;
 
 		for (int x = 1; x < n; x++)
 		{
-			sum = a;
-			a = b;
-			b = a + sum;
+			b = a;
+			a = sum;
+			sum = a + b;
 		}
 
-		return b;
+		return sum;
 	}
 }

@@ -12,18 +12,18 @@ class ProgramTimer
 
 	public static void end()
 	{
+		// When end is called, it should print
+		// the calculation of the time spent
 		endTime = System.nanoTime();
 		calcTime();
 	}
 
 	private static void calcTime()
-	{	
+	{
+		// Print the result
 		long totalTime = endTime - startTime;
-		
-		// Convert to seconds
-		// totalTime = TimeUnit.SECONDS.convert(totalTime, TimeUnit.NANOSECONDS);
-		
-		System.out.println("Program execution time: " + totalTime + " nanoseconds.");
-		//return totalTime;
+					
+		System.out.println("Program execution time: " +
+							totalTime + " nanoseconds.");
 	}
 }

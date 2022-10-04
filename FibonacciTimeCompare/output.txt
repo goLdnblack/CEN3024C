@@ -1,0 +1,376 @@
+Iterative Method
+
+Solving for fib(0)
+F(0) = Program execution time: 440600 nanoseconds.
+
+Solving for fib(1)
+F(1) = Program execution time: 500 nanoseconds.
+
+Solving for fib(2)
+F(2) = Program execution time: 500 nanoseconds.
+
+Solving for fib(3)
+F(3) = Program execution time: 400 nanoseconds.
+
+Solving for fib(4)
+F(4) = Program execution time: 400 nanoseconds.
+
+Solving for fib(5)
+F(5) = Program execution time: 400 nanoseconds.
+
+Solving for fib(6)
+F(6) = Program execution time: 400 nanoseconds.
+
+Solving for fib(7)
+F(7) = Program execution time: 400 nanoseconds.
+
+Solving for fib(8)
+F(8) = Program execution time: 400 nanoseconds.
+
+Solving for fib(9)
+F(9) = Program execution time: 500 nanoseconds.
+
+Solving for fib(10)
+F(10) = Program execution time: 500 nanoseconds.
+
+Solving for fib(11)
+F(11) = Program execution time: 600 nanoseconds.
+
+Solving for fib(12)
+F(12) = Program execution time: 500 nanoseconds.
+
+Solving for fib(13)
+F(13) = Program execution time: 500 nanoseconds.
+
+Solving for fib(14)
+F(14) = Program execution time: 700 nanoseconds.
+
+Solving for fib(15)
+F(15) = Program execution time: 600 nanoseconds.
+
+Solving for fib(16)
+F(16) = Program execution time: 500 nanoseconds.
+
+Solving for fib(17)
+F(17) = Program execution time: 500 nanoseconds.
+
+Solving for fib(18)
+F(18) = Program execution time: 500 nanoseconds.
+
+Solving for fib(19)
+F(19) = Program execution time: 500 nanoseconds.
+
+Solving for fib(20)
+F(20) = Program execution time: 600 nanoseconds.
+
+Solving for fib(21)
+F(21) = Program execution time: 600 nanoseconds.
+
+Solving for fib(22)
+F(22) = Program execution time: 500 nanoseconds.
+
+Solving for fib(23)
+F(23) = Program execution time: 600 nanoseconds.
+
+Solving for fib(24)
+F(24) = Program execution time: 600 nanoseconds.
+
+Solving for fib(25)
+F(25) = Program execution time: 600 nanoseconds.
+
+Solving for fib(26)
+F(26) = Program execution time: 600 nanoseconds.
+
+Solving for fib(27)
+F(27) = Program execution time: 600 nanoseconds.
+
+Solving for fib(28)
+F(28) = Program execution time: 700 nanoseconds.
+
+Solving for fib(29)
+F(29) = Program execution time: 700 nanoseconds.
+
+Solving for fib(30)
+F(30) = Program execution time: 700 nanoseconds.
+
+Solving for fib(31)
+F(31) = Program execution time: 700 nanoseconds.
+
+Solving for fib(32)
+F(32) = Program execution time: 800 nanoseconds.
+
+Solving for fib(33)
+F(33) = Program execution time: 700 nanoseconds.
+
+Solving for fib(34)
+F(34) = Program execution time: 700 nanoseconds.
+
+Solving for fib(35)
+F(35) = Program execution time: 700 nanoseconds.
+
+Solving for fib(36)
+F(36) = Program execution time: 700 nanoseconds.
+
+Solving for fib(37)
+F(37) = Program execution time: 800 nanoseconds.
+
+Solving for fib(38)
+F(38) = Program execution time: 700 nanoseconds.
+
+Solving for fib(39)
+F(39) = Program execution time: 700 nanoseconds.
+
+Solving for fib(40)
+F(40) = Program execution time: 800 nanoseconds.
+
+
+Recursive Method
+
+Solving for fib(0)
+F(0) = Program execution time: 511400 nanoseconds.
+
+Solving for fib(1)
+F(1) = Program execution time: 300 nanoseconds.
+
+Solving for fib(2)
+F(2) = Program execution time: 200 nanoseconds.
+
+Solving for fib(3)
+F(3) = Program execution time: 2900 nanoseconds.
+
+Solving for fib(4)
+F(4) = Program execution time: 500 nanoseconds.
+
+Solving for fib(5)
+F(5) = Program execution time: 600 nanoseconds.
+
+Solving for fib(6)
+F(6) = Program execution time: 600 nanoseconds.
+
+Solving for fib(7)
+F(7) = Program execution time: 800 nanoseconds.
+
+Solving for fib(8)
+F(8) = Program execution time: 1000 nanoseconds.
+
+Solving for fib(9)
+F(9) = Program execution time: 2400 nanoseconds.
+
+Solving for fib(10)
+F(10) = Program execution time: 2600 nanoseconds.
+
+Solving for fib(11)
+F(11) = Program execution time: 5900 nanoseconds.
+
+Solving for fib(12)
+F(12) = Program execution time: 9200 nanoseconds.
+
+Solving for fib(13)
+F(13) = Program execution time: 9200 nanoseconds.
+
+Solving for fib(14)
+F(14) = Program execution time: 14300 nanoseconds.
+
+Solving for fib(15)
+F(15) = Program execution time: 22500 nanoseconds.
+
+Solving for fib(16)
+F(16) = Program execution time: 36200 nanoseconds.
+
+Solving for fib(17)
+F(17) = Program execution time: 57700 nanoseconds.
+
+Solving for fib(18)
+F(18) = Program execution time: 169500 nanoseconds.
+
+Solving for fib(19)
+F(19) = Program execution time: 75100 nanoseconds.
+
+Solving for fib(20)
+F(20) = Program execution time: 17600 nanoseconds.
+
+Solving for fib(21)
+F(21) = Program execution time: 27300 nanoseconds.
+
+Solving for fib(22)
+F(22) = Program execution time: 43800 nanoseconds.
+
+Solving for fib(23)
+F(23) = Program execution time: 70000 nanoseconds.
+
+Solving for fib(24)
+F(24) = Program execution time: 113200 nanoseconds.
+
+Solving for fib(25)
+F(25) = Program execution time: 192000 nanoseconds.
+
+Solving for fib(26)
+F(26) = Program execution time: 234100 nanoseconds.
+
+Solving for fib(27)
+F(27) = Program execution time: 377100 nanoseconds.
+
+Solving for fib(28)
+F(28) = Program execution time: 611500 nanoseconds.
+
+Solving for fib(29)
+F(29) = Program execution time: 987600 nanoseconds.
+
+Solving for fib(30)
+F(30) = Program execution time: 1598200 nanoseconds.
+
+Solving for fib(31)
+F(31) = Program execution time: 2595800 nanoseconds.
+
+Solving for fib(32)
+F(32) = Program execution time: 4182800 nanoseconds.
+
+Solving for fib(33)
+F(33) = Program execution time: 6843800 nanoseconds.
+
+Solving for fib(34)
+F(34) = Program execution time: 10957400 nanoseconds.
+
+Solving for fib(35)
+F(35) = Program execution time: 17788900 nanoseconds.
+
+Solving for fib(36)
+F(36) = Program execution time: 28984100 nanoseconds.
+
+Solving for fib(37)
+F(37) = Program execution time: 46605200 nanoseconds.
+
+Solving for fib(38)
+F(38) = Program execution time: 75852600 nanoseconds.
+
+Solving for fib(39)
+F(39) = Program execution time: 124098300 nanoseconds.
+
+Solving for fib(40)
+F(40) = Program execution time: 197751400 nanoseconds.
+
+Recursive Memoization Method
+
+Solving for fib(0)
+F(0) = Program execution time: 641100 nanoseconds.
+
+Solving for fib(1)
+F(1) = Program execution time: 300 nanoseconds.
+
+Solving for fib(2)
+F(2) = Program execution time: 700 nanoseconds.
+
+Solving for fib(3)
+F(3) = Program execution time: 400 nanoseconds.
+
+Solving for fib(4)
+F(4) = Program execution time: 300 nanoseconds.
+
+Solving for fib(5)
+F(5) = Program execution time: 200 nanoseconds.
+
+Solving for fib(6)
+F(6) = Program execution time: 300 nanoseconds.
+
+Solving for fib(7)
+F(7) = Program execution time: 300 nanoseconds.
+
+Solving for fib(8)
+F(8) = Program execution time: 300 nanoseconds.
+
+Solving for fib(9)
+F(9) = Program execution time: 200 nanoseconds.
+
+Solving for fib(10)
+F(10) = Program execution time: 300 nanoseconds.
+
+Solving for fib(11)
+F(11) = Program execution time: 200 nanoseconds.
+
+Solving for fib(12)
+F(12) = Program execution time: 200 nanoseconds.
+
+Solving for fib(13)
+F(13) = Program execution time: 300 nanoseconds.
+
+Solving for fib(14)
+F(14) = Program execution time: 300 nanoseconds.
+
+Solving for fib(15)
+F(15) = Program execution time: 300 nanoseconds.
+
+Solving for fib(16)
+F(16) = Program execution time: 300 nanoseconds.
+
+Solving for fib(17)
+F(17) = Program execution time: 200 nanoseconds.
+
+Solving for fib(18)
+F(18) = Program execution time: 300 nanoseconds.
+
+Solving for fib(19)
+F(19) = Program execution time: 200 nanoseconds.
+
+Solving for fib(20)
+F(20) = Program execution time: 200 nanoseconds.
+
+Solving for fib(21)
+F(21) = Program execution time: 200 nanoseconds.
+
+Solving for fib(22)
+F(22) = Program execution time: 300 nanoseconds.
+
+Solving for fib(23)
+F(23) = Program execution time: 300 nanoseconds.
+
+Solving for fib(24)
+F(24) = Program execution time: 300 nanoseconds.
+
+Solving for fib(25)
+F(25) = Program execution time: 200 nanoseconds.
+
+Solving for fib(26)
+F(26) = Program execution time: 300 nanoseconds.
+
+Solving for fib(27)
+F(27) = Program execution time: 200 nanoseconds.
+
+Solving for fib(28)
+F(28) = Program execution time: 300 nanoseconds.
+
+Solving for fib(29)
+F(29) = Program execution time: 300 nanoseconds.
+
+Solving for fib(30)
+F(30) = Program execution time: 300 nanoseconds.
+
+Solving for fib(31)
+F(31) = Program execution time: 300 nanoseconds.
+
+Solving for fib(32)
+F(32) = Program execution time: 300 nanoseconds.
+
+Solving for fib(33)
+F(33) = Program execution time: 300 nanoseconds.
+
+Solving for fib(34)
+F(34) = Program execution time: 300 nanoseconds.
+
+Solving for fib(35)
+F(35) = Program execution time: 300 nanoseconds.
+
+Solving for fib(36)
+F(36) = Program execution time: 300 nanoseconds.
+
+Solving for fib(37)
+F(37) = Program execution time: 300 nanoseconds.
+
+Solving for fib(38)
+F(38) = Program execution time: 200 nanoseconds.
+
+Solving for fib(39)
+F(39) = Program execution time: 300 nanoseconds.
+
+Solving for fib(40)
+F(40) = Program execution time: 300 nanoseconds.
+
