@@ -7,50 +7,36 @@
 // increase over using four threads. 16 threads did not
 // significantly improve the runtime performance.
 
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.io.File;
-import java.io.IOException;
 
 public class SingleVSMulti
 {
 	public static void main(String[] args) 
 	{
-		// Read file containing 200m values
-		try 
+		// Initialize 200m values
+		ArrayList<Integer> alist = new ArrayList<>();
+		for (int x = 0; x < 200000000; x++)
 		{
-			// Initialize 200m values
-			
-			RandNum.random200m();
-			System.out.println("Generated a list of 200m new random values.\n");
+			alist.add(RandNum.newInt());
+		}
 
-			ArrayList<Integer> alist = new ArrayList<>();
-			Scanner sc = new Scanner(new File("200m_rand_1.txt"));
+		Object[] randomArr = alist.toArray();
 
-			while (sc.hasNext())
-			{
-				alist.add(sc.nextInt());
-			}
+		System.out.println("Generated a list of 200m new random values.\n");
 
-			Object[] randomArr = alist.toArray();
-
-			try
-			{
-				TestMultiThread(randomArr);
-			}
-			catch (InterruptedException e)
-			{
-				e.printStackTrace();
-			}
-
-
-		} 
-		catch (IOException e) 
+		try
+		{
+			TestSingleThread(randomArr);
+			TestTwoThread(randomArr);
+			TestFourThread(randomArr);
+			TestEightThread(randomArr);
+			Test16Thread(randomArr);
+		}
+		catch (InterruptedException e)
 		{
 			e.printStackTrace();
 		}
-
 	}
 
 	public static void Test16Thread(Object[] randomArr) throws InterruptedException
@@ -140,8 +126,8 @@ public class SingleVSMulti
 		long endTime = System.nanoTime();
 		long duration = (endTime - startTime);
 		
-		System.out.println("16 threads sum answer: " + totalSum);
-		System.out.println("16 threads time spent: " + duration + " nanoseconds.");
+		System.out.println("16 threaded sum answer: " + totalSum);
+		System.out.println("16 threaded time spent: " + duration + " nanoseconds.");
 	}
 
 	public static void TestEightThread(Object[] randomArr) throws InterruptedException
@@ -195,8 +181,8 @@ public class SingleVSMulti
 		long endTime = System.nanoTime();
 		long duration = (endTime - startTime);
 		
-		System.out.println("Eight threads sum answer: " + totalSum);
-		System.out.println("Eight threads time spent: " + duration + " nanoseconds.");
+		System.out.println("Eight threaded sum answer: " + totalSum);
+		System.out.println("Eight threaded time spent: " + duration + " nanoseconds.");
 	}
 
 	public static void TestTwoThread(Object[] randomArr) throws InterruptedException
@@ -224,11 +210,11 @@ public class SingleVSMulti
 		long endTime = System.nanoTime();
 		long duration = (endTime - startTime);
 		
-		System.out.println("Two threads sum answer: " + totalSum);
-		System.out.println("Two threads time spent: " + duration + " nanoseconds.");
+		System.out.println("Two threaded sum answer: " + totalSum);
+		System.out.println("Two threaded time spent: " + duration + " nanoseconds.");
 	}
 
-	public static void TestMultiThread(Object[] randomArr) throws InterruptedException
+	public static void TestFourThread(Object[] randomArr) throws InterruptedException
 	{	
 		// Split array into 4 parts to send
 		// to 4 threads
@@ -262,8 +248,8 @@ public class SingleVSMulti
 		long endTime = System.nanoTime();
 		long duration = (endTime - startTime);
 		
-		System.out.println("Multithreaded sum answer: " + totalSum);
-		System.out.println("Multithreaded time spent: " + duration + " nanoseconds.");
+		System.out.println("Four threaded sum answer: " + totalSum);
+		System.out.println("Four threaded time spent: " + duration + " nanoseconds.");
 	}
 	
 	public static void TestSingleThread(Object[] randomArr) throws InterruptedException

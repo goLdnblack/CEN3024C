@@ -11,6 +11,8 @@ public class RandNum
 		return (r.nextInt(10)) + 1;
 	}
 
+	// Old function to generate a text file containing
+	// the 200m values to compare sum results
 	public static void random200m()
 	{
 		try
