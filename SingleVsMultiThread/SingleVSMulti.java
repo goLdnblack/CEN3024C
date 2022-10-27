@@ -269,8 +269,8 @@ public class SingleVSMulti
 		long endTime = System.nanoTime();
 		long duration = (endTime - startTime);
 		
-		System.out.println("Singlethreaded sum answer: " + totalSum);
-		System.out.println("Singlethreaded time spent: " + duration + " nanoseconds.");
+		System.out.println("Single threaded sum answer: " + totalSum);
+		System.out.println("Single threaded time spent: " + duration + " nanoseconds.");
 
 
 	}
