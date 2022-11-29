@@ -1,3 +1,7 @@
+// Jesus Sanchez
+// CEN 3024
+// Prof Walauskis
+// 11.28.2022
 import java.io.*;
 import java.net.*;
 import javafx.application.Application;
